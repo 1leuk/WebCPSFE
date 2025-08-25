@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-24 md:pt-28 max-w-6xl mx-auto">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -69,16 +69,18 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
           >
-            <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">
-              Connect
-            </span>
-            <br />
-            <span className="text-white">the Node</span>
-            <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">
-              Connect
-            </span>
-            <br />
-            <span className="text-white">the Node</span>
+            <span className="sr-only">Connect the Node, Connect the World</span>
+            <div className="inline-block leading-none">
+              <span className="block text-white/80 text-2xl md:text-3xl tracking-[0.35em] uppercase mb-3">Connect the</span>
+              <span className="block">
+                <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent drop-shadow-[0_6px_30px_rgba(239,68,68,0.45)]">Node</span>
+              </span>
+              <div className="mx-auto my-6 h-1 w-24 md:w-40 rounded-full bg-gradient-to-r from-red-500 to-red-700 shadow-[0_0_35px_rgba(239,68,68,0.6)]" />
+              <span className="block text-white/80 text-2xl md:text-3xl tracking-[0.35em] uppercase mb-3">Connect the</span>
+              <span className="block">
+                <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent drop-shadow-[0_6px_30px_rgba(239,68,68,0.45)]">World</span>
+              </span>
+            </div>
           </motion.h1>
 
           {/* Subtitle */}
@@ -119,7 +121,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto"
+            className="grid grid-cols-3 gap-8 mt-20 mb-24 md:mb-28 max-w-2xl mx-auto"
           >
             {[
               { number: "50+", label: "Research Papers" },

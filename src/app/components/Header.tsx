@@ -16,9 +16,9 @@ const navigation = [
 ];
 
 const divisions = [
-  { name: 'Research & Development', href: '/division/research' },
-  { name: 'Education & Training', href: '/division/education' },
-  { name: 'Innovation Lab', href: '/division/innovation' },
+  { name: 'CORE', href: '/division/core' },
+  { name: 'Research', href: '/division/research' },
+  { name: 'Pracitucm', href: '/division/practicum' },
   { name: 'Industry Partnership', href: '/division/partnership' },
 ];
 
